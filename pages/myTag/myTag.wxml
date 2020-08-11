@@ -1,0 +1,30 @@
+<view class="container">
+
+  <text>请选择标签</text>
+
+  <view class="tag_view">
+    <block wx:for="{{tagArr}}" wx:for-item="obj" wx:for-index="idx">
+      <view class="tag_sub_view" bindtap="tagClick" data-idx="{{idx}}">
+            <text class="tag {{obj.flag ? 'sel_tag' : ''}}">{{obj.title}}</text>
+      </view>
+    </block>
+  </view>
+
+
+
+  <text>请选择证书</text>
+
+  <view class="tag_view">
+    <block wx:for="{{cert}}" wx:for-item="obj" wx:for-index="idx">
+      <view class="tag_sub_view" bindtap="tagClickCert" data-idx="{{idx}}">
+            <text class="tag {{obj.flag ? 'sel_tag' : ''}}">{{obj.title}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="submitView">
+      <button formType="submit" disabled="{{!enableSubmit}}" class="submitButton {{!enableSubmit ? 'submitButtonDis' : ''}}">
+          完成
+      </button>
+  </view>
+</view>

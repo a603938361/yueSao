@@ -1,0 +1,51 @@
+@import "../../../assets/style/mixin.scss";
+@import "../../../assets/iconfont/sprite.scss";
+
+.form-picker {
+    margin-bottom: 20rpx;
+    .label {
+        display: flex;
+        justify-content: space-between;
+
+        .label-input {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            height: 74rpx;
+
+            .input-title {
+                width: 206rpx;
+                font-size: 24rpx;
+            }
+
+            picker {
+                flex-grow: 1;
+                border: $cr-line 1px solid;
+                height: 100%;
+                width: 490rpx;
+                display: flex;
+                align-items: center;
+
+                .picker {
+                    font-size: 24rpx;
+                    height: 74rpx;
+                    line-height: 74rpx;
+                    margin-left: 20rpx;
+                }
+
+                .placeholder {
+                    font-size: 24rpx;
+                    color: $cr-light;
+                    height: 74rpx;
+                    line-height: 74rpx;
+                    margin-left: 20rpx;
+                }
+            }
+        }
+    }
+
+    .erro-msg {
+        font-size: 22rpx;
+        line-height: 26rpx;
+    }
+}

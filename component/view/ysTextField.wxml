@@ -1,0 +1,8 @@
+<view class="container">
+
+				<view class="mobileView">
+						<view class="mobileTitle">{{name}}</view>
+						<input class="inputamobile" name="{{name}}" placeholder="{{placeholder}}" maxlength="{{maxlength}}" type="number"  bindinput="inputValuePhone" />
+				</view>
+
+</view>

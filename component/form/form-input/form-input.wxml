@@ -1,0 +1,10 @@
+<view class="form-input">
+    <view class="label">
+        <view class="label-input">
+            <text class="input-title">{{title}}</text>
+            <input placeholder="{{placeholder}}" placeholder-class="placeholder" value="{{setValue}}" type="{{type}}" maxlength="{{maxlength}}" bindinput="inputHandle" />
+        </view>
+        <slot></slot>
+    </view>
+    <text wx:if="{{erroMsg}}" class="erro-msg">{{erroMsg}}</text>
+</view>

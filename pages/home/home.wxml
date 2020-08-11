@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<view>
+<!-- <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 获取手机号</button> -->
+
+<text bindtap="wxSubscribe">  订阅消息</text>
+<text bindtap="uploadIcon">  上传头像</text>
+</view>

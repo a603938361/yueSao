@@ -1,0 +1,43 @@
+/* pages/mine.wxss */
+.container {
+  display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+
+.icon_header {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  margin-top: 20px;
+}
+
+.login_text{
+  color: #333;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+
+.line{
+  margin-top: 20px;
+  height: 16rpx;
+  width: 100%;
+  background-color: #dfdfdf;
+}
+
+.cell{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  width: 100%;
+}
+.cell_text{
+  margin-left: 20px;
+  font-size: 14px;
+}
+.arrow{
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+}

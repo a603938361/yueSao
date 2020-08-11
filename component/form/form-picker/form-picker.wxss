@@ -1,0 +1,36 @@
+.form-picker .label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between; }
+  .form-picker .label .label-input {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    height: 74rpx;
+    border: #dfdfdf 1px solid;
+    padding: 0 20rpx; }
+    .form-picker .label .label-input .input-title {
+      width: 206rpx;
+      font-size: 24rpx; }
+    .form-picker .label .label-input picker {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+              flex-grow: 1; }
+      .form-picker .label .label-input picker .picker {
+        font-size: 24rpx; }
+      .form-picker .label .label-input picker .placeholder {
+        font-size: 24rpx;
+        color: #999; }
+
+.form-picker .erro-msg {
+  font-size: 22rpx;
+  line-height: 26rpx; }

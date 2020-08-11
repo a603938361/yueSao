@@ -1,0 +1,101 @@
+<scroll-view class="container">
+		<form bindsubmit="formSubmit" report-submit='true'>
+
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">*姓名</view>
+								<input class="inputPicCode" name="name" placeholder="请输入姓名" maxlength="6" value='{{picCode}}' bindinput="inputValueCode" />
+						</view>
+				</view>
+
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">性别</view>
+								<picker mode="selector" name="xingbie" bindchange="changeHandleSex" value="{{xingbieValue}}" range="{{xingbieArr}}">
+										<view wx:if="{{xingbieValue}}" class="picker">{{xingbieValue}}</view>
+										<view wx:else class="placeholder">请选择性别</view>
+								</picker>
+								<image class="picker-arrow" src="../../assets/images/picker-arrow.png"></image>
+						</view>
+				</view>
+
+			  <text>上传头像</text>
+
+  			<image class="icon_header" wx:if="{{}}" src="{{}}"/>
+  			<image class="icon_header" bindtap="uploadIcon" wx:else src="../../assets/images/no_login.png"/>
+				
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">民族</view>
+								<input class="inputPicCode" name="nation" placeholder="请输入民族" maxlength="18" value='{{picCode}}' bindinput="inputValueCode" />
+						</view>
+				</view>
+
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">出生年月</view>
+								<picker mode="date" name="birthday" bindchange="changeHandleBir" value="{{birValue}}">
+										<view wx:if="{{birValue}}" class="picker">{{birValue}}</view>
+										<view wx:else class="placeholder">请选择出生年月</view>
+								</picker>
+								<image class="picker-arrow" src="../../assets/images/picker-arrow.png"></image>
+						</view>
+				</view>
+
+				<view class="mobileView">
+						<view class="mobileTitle">*手机号码</view>
+						<input class="inputamobile" name="tel" placeholder="请输入手机号码" maxlength="11" type="number" value='{{mobile}}' bindinput="inputValuePhone" />
+						<!-- <button class="wxMobile" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+								使用微信手机号
+						</button> -->
+				</view>
+
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">*身份证号码</view>
+								<input class="inputPicCode" name="idCard" placeholder="请输入身份证号码" maxlength="18" value='{{picCode}}' bindinput="inputValueCode" />
+						</view>
+				</view>
+
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">*工作年限</view>
+								<input class="inputPicCode" name="jod" placeholder="请输入工作年限（单位:年）" maxlength="2" value='{{picCode}}' bindinput="inputValueCode" />
+						</view>
+				</view>
+				
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">籍贯</view>
+								<input class="inputPicCode" name="jiGuan" placeholder="请输入籍贯" maxlength="10" value='{{picCode}}' bindinput="inputValueCode" />
+						</view>
+				</view>
+				
+
+				<view class="codeView">
+						<view class="picCodeView">
+								<view class="picCodeTitle">学历</view>
+								<picker mode="selector" name="xueli" bindchange="changeHandle" value="{{xueliValue}}" range="{{xueliArr}}">
+										<view wx:if="{{xueliValue}}" class="picker">{{xueliValue}}</view>
+										<view wx:else class="placeholder">请选择学历</view>
+								</picker>
+								<image class="picker-arrow" src="../../assets/images/picker-arrow.png"></image>
+						</view>
+				</view>
+
+
+				<!-- <form-input name="name123" type="text" maxlength="130" title="*收货人姓名" placeholder="请输入收货人姓名" value="{{addressData.name}}" />
+				<form-picker name="region" type="text" title="*所在地区" maxlength="100" placeholder="请选择省份/直辖市-市-县/区" value="{{addressData.region}}">
+						<image class="picker-arrow" src="/../../../assets/"></image>
+				</form-picker>
+				<form-input name="address" type="text" title="*详细地址" maxlength="200" placeholder="请输入具体街道、门牌号等详细地址" value="{{addressData.detail}}" />
+				<form-input name="tel" type="number" title="*手机号码" maxlength="11" placeholder="请输入收货人手机号码" value="{{addressData.tel}}" />
+				<form-input name="zone" type="number" title="*邮编" maxlength="6" placeholder="请输入邮政编码" value="{{addressData.zone}}" /> -->
+							
+				<view class="submitView">
+						<button formType="submit" disabled="{{!enableSubmit}}" class="submitButton {{!enableSubmit ? 'submitButtonDis' : ''}}">
+								下一步
+						</button>
+				</view>
+		</form>
+</scroll-view>

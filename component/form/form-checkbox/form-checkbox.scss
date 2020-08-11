@@ -1,0 +1,19 @@
+@import "../../../assets/style/mixin.scss";
+@import "../../../assets/iconfont/sprite.scss";
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    .label-checkbox{
+        @include flex-cc;
+        border: $cr-line 1px solid;
+        width: 42rpx;
+        height: 42rpx;
+        margin-right: 32rpx;
+        
+    }
+    .label-checkbox.cur{
+        .icon{
+            @include sprite($from-checkbox-sel);
+        }
+    }
+}

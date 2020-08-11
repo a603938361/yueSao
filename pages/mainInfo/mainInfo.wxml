@@ -1,0 +1,19 @@
+<view class="container">
+
+  <text>相关资料</text>
+
+  <view class="sec_view">
+    <text>工作经验</text>
+    <view class="textarea_gzjy">
+          <textarea class="textarea_gzjy" placeholder="请输入工作经验" maxlength="400" auto-focus="true">    </textarea>
+    </view>
+  </view>
+
+
+
+  <view class="submitView">
+      <button formType="submit" disabled="{{!enableSubmit}}" class="submitButton {{!enableSubmit ? 'submitButtonDis' : ''}}">
+          下一步
+      </button>
+  </view>
+</view>

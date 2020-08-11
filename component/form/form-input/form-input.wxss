@@ -1,0 +1,37 @@
+.form-input .label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between; }
+  .form-input .label .label-input {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    height: 74rpx;
+    border: #dfdfdf 1px solid;
+    padding: 0 20rpx; }
+    .form-input .label .label-input .input-title {
+      width: 206rpx;
+      font-size: 24rpx; }
+    .form-input .label .label-input .placeholder {
+      color: #999; }
+    .form-input .label .label-input input {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+              flex-grow: 1;
+      background: none;
+      outline: none;
+      border: 0;
+      font-size: 24rpx; }
+
+.form-input .erro-msg {
+  font-size: 22rpx;
+  line-height: 26rpx; }

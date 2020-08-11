@@ -1,0 +1,13 @@
+<view class="form-picker">
+    <view class="label">
+        <view class="label-input">
+            <text class="input-title">{{title}}</text>
+            <picker mode="region" bindchange="changeHandle" value="{{value}}">
+                <view wx:if="{{value.length>0}}" class="picker">{{value[0]}}-{{value[1]}}-{{value[2]}}</view>
+                <view wx:else class="placeholder">{{placeholder}}</view>
+            </picker>
+            <slot></slot>
+        </view>
+    </view>
+    <text wx:if="{{erroMsg}}" class="erro-msg">{{erroMsg}}</text>
+</view>

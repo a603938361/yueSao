@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+         }
+        
+  .picker-arrow {
+    width: 14rpx;
+    height: 21rpx;
+    top: 25rpx;
+    position: relative;
+    right: 35rpx;
+  }
+
+  .icon_header {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 75rpx;
+    margin-top: 20px;
+  }
+  .placeholder {
+    font-size: 24rpx;
+    color: #333;
+    height: 74rpx;
+    line-height: 74rpx;
+    margin-left: 20rpx;
+  }
+
+  picker {
+    flex-grow: 1;
+    height: 100%;
+    width: 520rpx;
+    display: flex;
+    align-items: center;
+  }
+  .picker {
+    font-size: 24rpx;
+    height: 74rpx;
+    line-height: 74rpx;
+    margin-left: 20rpx;
+  }
+
+  .container .mobileView {
+    display: flex;
+            flex-direction: row;
+    margin-left: 25rpx;
+    margin-right: 25rpx;
+    margin-bottom: 25rpx;
+    width: 700rpx;
+    height: 75rpx;
+    border: 1rpx #dfdfdf solid; 
+  }
+    .container .mobileView .mobileTitle {
+      width: 140rpx;
+      padding-left: 20rpx;
+      font-size: 24rpx;
+      color: #333;
+      line-height: 75rpx; }
+    .container .mobileView .inputamobile {
+      padding-left: 40rpx;
+      font-size: 24rpx;
+      color: #333;
+      width: 340rpx;
+      height: 100%; }
+    .container .mobileView .mobileOr {
+      font-size: 24rpx;
+      width: 30rpx;
+      line-height: 75rpx;
+      text-align: center; }
+    .container .mobileView .wxMobile {
+      border-radius: 0;
+      border-style: none;
+      background: white;
+      color: #333;
+      font-size: 24rpx;
+      width: 210rpx;
+      line-height: 75rpx;
+      text-align: center;
+      text-decoration: underline;
+      padding: 0 0; }
+    .container .mobileView .wxMobile::after {
+      border-radius: 0;
+      border: none; }
+  .container .codeView {
+    margin-left: 25rpx;
+    padding-right: 25rpx;
+    padding-bottom: 25rpx;
+    width: 100%;
+    display: flex;
+            flex-direction: row; }
+    .container .codeView .picCodeView {
+      display: flex;
+      height: 75rpx;
+      border: 1rpx #dfdfdf solid; 
+    }
+      .container .codeView .picCodeView .picCodeTitle {
+        width: 150rpx;
+        padding-left: 20rpx;
+        font-size: 24rpx;
+        color: #333;
+        line-height: 75rpx; }
+      .container .codeView .picCodeView .inputPicCode {
+        padding-left: 30rpx;
+        font-size: 24rpx;
+        color: #333;
+        height: 100%; 
+        width: 500rpx;}
+  .container .checkBox1 {
+    padding-top: 60rpx;
+    padding-left: 25rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row; }
+    .container .checkBox1 .rule {
+      text-decoration: underline; }
+    .container .checkBox1 .policy {
+      text-decoration: underline; }
+    .container .checkBox1 .protocolTitle {
+      width: 630rpx; }
+  .container .checkBox2 {
+    padding-top: 30rpx;
+    padding-left: 25rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row; }
+    .container .checkBox2 .sendMessage {
+      width: 630rpx; }
+  .container .submitView {
+    padding-top: 80rpx;
+    padding-left: 25rpx;
+    padding-right: 25rpx; }
+    .container .submitView .submitButton {
+      background: #000;
+      color: #fff;
+      line-height: 65rpx;
+      font-size: 30rpx;
+      margin-bottom: 20px;
+      border-radius: 0; }
+    .container .submitView .submitButton:after {
+      border-radius: 0;
+      border: 1px solid #dfdfdf; }
+    .container .submitView .submitButtonDis {
+      background: #dfdfdf; }

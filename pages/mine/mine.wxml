@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<view class="container" >
+  <image class="icon_header" wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}"/>
+  <image class="icon_header" wx:else src="../../assets/images/no_login.png"/>
+
+  <text wx:if="{{userInfo}}" class="login_text" bindtap="login">{{userInfo.nickName}}</text>  
+<button wx:else class="login_text" open-type="getUserInfo" bindgetuserinfo="getuserinfo"> 登录注册</button>
+<view class="line"/>
+<view class="cell">
+  <text class="cell_text">我的信息</text>
+  <image class="arrow" src="../../assets/images/picker-arrow.png"></image>
+</view>
+</view>

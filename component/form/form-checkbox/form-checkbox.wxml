@@ -1,0 +1,8 @@
+<view class="form-checkbox" bind:tap="tapBox">
+    <view class="label-checkbox {{value?'cur':''}}">
+        <view class="icon"></view>
+    </view>
+    <view class="label-content">
+        <slot></slot>
+    </view>
+</view>

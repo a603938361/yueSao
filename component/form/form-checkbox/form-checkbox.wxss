@@ -1,0 +1,27 @@
+.form-checkbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center; }
+  .form-checkbox .label-checkbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    border: #dfdfdf 1px solid;
+    width: 42rpx;
+    height: 42rpx;
+    margin-right: 32rpx; }
+  .form-checkbox .label-checkbox.cur .icon {
+    background-image: url(https://xiaojiejie.oss-cn-shanghai.aliyuncs.com/minipro/MAC/images/sprite1.png);
+    background-position: -255rpx -107rpx;
+    background-size: 300rpx 278rpx;
+    width: 42rpx;
+    height: 42rpx; }

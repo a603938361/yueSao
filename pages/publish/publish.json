@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ysTextField":"../../component/view/ysTextField",
+
+    "form-input": "../../component/form/form-input/form-input",
+    "form-picker": "../../component/form/form-picker/form-picker"
+  },
+  "navigationBarTitleText": "发布"
+}

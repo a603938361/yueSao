@@ -1,0 +1,37 @@
+@import "../../../assets/style/mixin.scss";
+.form-input {
+    margin-bottom: 20rpx;
+    
+    .label{
+        display: flex;
+        justify-content: space-between;
+        .label-input{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            height: 74rpx;
+            .input-title{
+                width: 206rpx;
+                font-size: 24rpx;
+            }
+            .placeholder{
+                font-size: 24rpx;
+                line-height: 9rpx;
+                color: $cr-light;
+            }
+            input{
+                flex-grow: 1;
+                background:none;
+                outline: none;
+                font-size: 24rpx;
+                border: $cr-line 1px solid;
+                padding-left: 20rpx;
+                height: 100%;
+            }
+        }
+    }
+    .erro-msg{
+        font-size: 22rpx;
+        line-height: 26rpx;
+    }
+}
